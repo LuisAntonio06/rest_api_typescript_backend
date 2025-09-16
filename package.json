@@ -7,10 +7,11 @@
   ],
   "license": "ISC",
   "author": "Luis Antonio Zambrano",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "tsc",
+    "start": "node dist/index.js",
     "test": "jest --detectOpenHandles",
     "pretest": "ts-node ./src/data --clear"
   },
